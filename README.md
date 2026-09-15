@@ -113,9 +113,16 @@ hfut-scraper/
 ├── hfut_scraper.py                # 基础爬虫
 ├── hfut_deep_scraper.py           # 深度爬虫
 ├── md_to_docx.py                  # Markdown → Word 转换
+├── gen_manual_docx.py             # 生成说明书 docx
+├── requirements.txt               # 依赖清单
 ├── hfut_activities.json           # 历史数据存档
 └── 合肥工业大学比赛活动检索报告.md  # 最新报告
 ```
+
+> **2026-09-15 仓库瘦身**：原先本仓库还混着两类与"爬虫"无关的内容，现已拆到独立仓库，
+> 让本仓库回归单一职责：
+> - **Codex App 安装配置资料与脚本** → [codex-app-guide](https://github.com/smiling66652/codex-app-guide)
+> - **PLC 课程复习资料** → 已移入私有仓库 `plc-review`
 
 ---
 
