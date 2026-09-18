@@ -1,10 +1,22 @@
-# 🕷️ hfut-scraper
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <img src="assets/banner.svg" alt="hfut-scraper — 合工大官网信息爬取与报告生成工具集" width="100%">
+  </picture>
+</p>
 
 > 合工大官网信息爬取工具集 — 比赛活动信息抓取、官网巡检、报告生成
 
 ![Python](https://img.shields.io/badge/python-3.8+-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![GitHub](https://img.shields.io/badge/GitHub-smiling66652-orange.svg)
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/diagram-dark.svg">
+    <img src="assets/diagram.svg" alt="hfut-scraper 数据流：目标站点 → 抓取去重 → 结构化存储 → 报告生成" width="100%">
+  </picture>
+</p>
 
 ---
 
@@ -122,7 +134,7 @@ hfut-scraper/
 > **2026-09-15 仓库瘦身**：原先本仓库还混着两类与"爬虫"无关的内容，现已拆到独立仓库，
 > 让本仓库回归单一职责：
 > - **Codex App 安装配置资料与脚本** → [codex-app-guide](https://github.com/smiling66652/codex-app-guide)
-> - **PLC 课程复习资料** → 已移入私有仓库 `plc-review`
+> - **PLC 课程复习资料** → 已移入 [hfut-info-monitor-research](https://github.com/smiling66652/hfut-info-monitor-research)
 
 ---
 
@@ -166,7 +178,7 @@ DOCX_OUTPUT = "合肥工业大学比赛活动检索报告.docx"
 
 ```bash
 # 创建定时任务（每天 8:00 运行）
-schtasks /create /sc daily /st 08:00 /tn "HFUT_Scraper" /tr "python D:/wb_misc/hfut_deep_scraper.py"
+schtasks /create /sc daily /st 08:00 /tn "HFUT_Scraper" /tr "python D:/hfut-scraper/hfut_deep_scraper.py"
 ```
 
 ### 示例 2：结合 WorkBuddy 自动化
